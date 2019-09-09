@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+  {% block content %}
+  <div class="hero hero-main">
+    <div class="hero-body">
+      <h1 class="title">Magic Calculator</h1>
+        <div class="tile is-ancestor tile-hero">
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <div class="tabs">
+                <a href="#" class="button is-outlined tab-camera" data-target="camera">Webcam</a>
+                <a href="#" class="button is-info tab-canvas" data-target="canvas">Canvas</a>
+              </div>
+              <form action="" class="form-capture-image" enctype="multipart/form-data">
+                <div class="tab-content tab-camera camera-wrapper hidden">
+                  <div class="camera-guide"></div>
+                  <div id="my-camera"></div>
+                  <img src="#" class="taken-photo hidden" /> 
+                </div>
+                <div class="tab-content tab-canvas canvas-wrapper">
+                  <canvas id="canvas" width="512" height="256"></canvas>
+                </div>
+              </form>
+              <div class="results hidden">
+              </div>
+              <div class="tab-content-buttons">
+                <a href="#" class="btn-capture-image button is-success">Calculate</a>
+                <a href="#" class="btn-clear-canvas button is-outlined">Clear Canvas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+{% endblock %}

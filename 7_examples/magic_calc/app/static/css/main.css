@@ -1,0 +1,207 @@
+html {
+  height: 100vh;
+  background: #000;
+}
+body {
+  height: 100vh;
+  min-height: 100vh;
+  padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, .title  {
+  color: #fff;
+  font-family: 'Orbitron', cursive;
+  line-height: 2;
+}
+
+h1.title {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: bold;    
+  margin: 0;
+  padding: 28px 0 0 0;
+  line-height: 1em;
+  text-align: center;
+}
+
+.hidden {
+  display: none!important;
+}
+
+input[type="text"] {
+  height: 3em;
+  line-height: 3em;
+  font-size: 1em;
+  font-family: 'Orbitron', cursive;
+  padding: 0 1em;
+}
+
+.text-grads-1 {
+  background: -webkit-gradient(linear,left top,right top,from(#ff1515),to(#860000));
+  background: linear-gradient(to right,#ff1515,#860000);
+  background-clip: border-box;  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.text-grads-2 {
+  background: -webkit-gradient(linear,left top,right top,from(#ff0000),to(#bb0303)); 
+  background: linear-gradient(to right,#ff0000,#bb0303);
+  background-clip: border-box;  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.text-grads-3 {
+  background: -webkit-gradient(linear,left top,right top,from(#0700b8),to(#00ff88));
+  background: linear-gradient(to right,#0700b8,#00ff88);
+  background-clip: border-box;  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+#file {
+  display: block;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.btn-choose-other-image.is-info.is-outlined {
+  background-color: #fff;
+}
+
+.is-doom {
+  background-image: linear-gradient(141deg,#9e0000 0,#000000 25%, #000000 75%,#eb0000 100%);
+}
+
+.hero-body {
+  padding: 0 1.5rem;
+}
+
+.vex.vex-theme-default.rsp-dialog .vex-content {
+  padding: 1.5em;
+  width: 780px;
+}
+
+.rsp-dialog-title {
+  font-size: 2em;
+  background: -webkit-gradient(linear,left top,right top,from(#d53369),to(#3f0101));
+  background: linear-gradient(to right,#d53369,#3f0101);
+  background-clip: border-box;  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.rsp-dialog-content {
+  margin-bottom: 10px;
+}
+
+.dialog-text-wrapper .letter-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.dialog-text-wrapper .letter {
+  font-family: 'Orbitron', cursive;
+  display: inline-block;
+  line-height: 1em;
+}
+
+.vex-overlay {
+  background: rgba(0, 0, 0, 1);
+}
+/*-----------------------------------*\
+  MAIN
+\*-----------------------------------*/
+.hero-main {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.tile-hero {
+  position: relative;
+}
+
+.tabs {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.tabs .button {
+  margin: 0 10px;
+}
+
+.tabs .button.is-outlined {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.tab-content {
+  text-align: center;
+}
+
+.camera-wrapper {
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.camera-guide {
+  background: url('../img/camera-guide.png') no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#my-camera {
+  margin: 0 auto;
+}
+
+.tab-content-buttons {
+  text-align: center;
+  flex-grow: 1;
+  width: 20%;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+
+.tab-content-buttons .button {
+  margin: 0 auto !important;
+}
+
+#canvas {
+  /* background: white; */
+  border: 5px solid white;
+}
+
+.taken-photo {
+  margin: 0 auto;
+}
+
+.results {
+  text-align: center;
+}
+
+/*-----------------------------------*\
+  $ANIMATIONS
+\*-----------------------------------*/
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
+
+/*-----------------------------------*\
+  RESPONSIVE
+\*-----------------------------------*/
